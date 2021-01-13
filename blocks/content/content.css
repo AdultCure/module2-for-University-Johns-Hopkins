@@ -1,0 +1,29 @@
+@import url("__box/content__box.css");
+@import url("__text/content__text.css");
+@import url("__title/content__title.css");
+@import url("__title-wrapper/content__title-wrapper.css");
+
+.content {
+    max-width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 500px));
+    grid-gap: 0 40px;
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .content {
+        grid-template-columns: repeat(2, minmax(auto, 500px));
+        grid-gap: 40px 40px;
+        grid-template-areas: 'chicken beef'
+                              'sushi sushi';
+    }
+}
+
+@media (max-width: 767px) {
+    .content {
+        grid-template-columns: 1fr;
+        grid-gap: 40px 0;
+    }
+}

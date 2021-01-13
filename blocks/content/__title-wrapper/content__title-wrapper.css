@@ -1,0 +1,16 @@
+.content__title-wrapper {
+    background-color: #d2a5ff;
+    max-width: 100px;
+    width: 100%;
+    align-self: flex-end;
+    border: 1px solid #4f4f4f;
+    margin-bottom: 20px;
+}
+
+.second-wrapper {
+    background-color: #ffa5bf;
+}
+
+.third-wrapper {
+    background-color: #a5ffbf;
+}
